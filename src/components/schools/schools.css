@@ -1,0 +1,38 @@
+.schools-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.schools_grid-item {
+  display: flex;
+  justify-content: space-between;
+}
+.student_grid-item, .group_grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.progressbar-container {
+  display: inline-block;
+  width:150px;
+  
+}
+.progressbar-container .progressbar {
+  display: block;
+  height: 24px;
+  background: var(--primary-color);
+}.student_item {
+    margin: 10px 0px;
+    padding: 5px 0;
+    background: var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+.user{
+  display: inline-block;
+  margin: 0 10px;
+}
+.user_viewed {
+  float: right;
+  
+}
+

@@ -1,3 +1,14 @@
+:root {
+ 
+  --btn-color: #000000; 
+  --primary-color-2: white;
+  --primary-color: #00A99D;
+  --secondary-color: #0083a9; 
+  --tertiairy-color: #6cbfd6; 
+  --tertiairy-color-hover: #0a5d98; 
+  --main-padding: 10px; 
+  --shadow : 0 0 5px rgba(0,0,0,0.2);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

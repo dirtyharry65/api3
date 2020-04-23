@@ -1,0 +1,105 @@
+.courses-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video-table{
+  width: 100%;
+}
+.left-panel {
+  /* max-width: 45%; */
+  padding: 10px 0;;
+}
+.video-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+}
+.video-list{
+  padding: 0;
+}
+.video-item-header {
+  font-weight: 700;
+}
+.course-content {
+    padding: 10px;
+    background: rgba(0,100,200 ,0.2);
+    margin: 5px;
+    position: relative;
+}
+.course_list, .schools_list, .groups_list {
+   list-style-type : none;
+}
+.course_grid-item, .schools_grid-item, .group_grid-item {
+  padding: 5px 10px;
+    margin: 5px 10px;
+    background: var(--tertiairy-color);
+    color: var(--primary-color-2);
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: .8;
+}
+.active {
+  opacity: 1;
+  color: var(--secondary-color);
+}
+.course_grid-item:hover {
+  opacity: 1;
+}
+.course-content-top{
+  position: relative;
+}
+.chapter-content {
+
+}
+.video-content {
+  margin: 10px;;
+}
+.spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background: rgba(0,0,0,0.2);
+}
+.chapter-list {
+  margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+.chapter-header{
+  padding: 5px 10px;
+  background:var(--tertiairy-color);
+  border-radius: 5px;
+  color: var(--primary-color-2);
+}
+.external-link {
+  text-decoration: none;
+  color: var(--primary-color-2);
+  background: rgba(0,0,0,0.1);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+.meta-data{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.meta-cell {
+    
+}
+.meta-key , .meta-value {
+    display: inline-block;
+    margin: 0 10px;
+}
+.meta-value {
+  text-align: center;
+}
+
+.timeline_panel {
+  margin: 10px 0;
+  background : var(--tertiairy-color);
+  padding: 20px 10px;
+  border-radius: 5px;;
+}

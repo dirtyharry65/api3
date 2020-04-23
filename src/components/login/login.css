@@ -1,0 +1,162 @@
+.form {
+  width: 50%;
+  max-width: 600px;
+  margin: var(--main-padding) auto;
+  padding: var(--main-padding);
+  box-shadow: var(--shadow);
+  background-color: #eef1f3c4;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.form .btn {
+  box-shadow: var(--shadow);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+.form__item {
+  padding: var(--main-padding);
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+}
+input[ type=text], input[type=password], input[type=email], textarea {
+  /* width: 65%; */
+  padding: 5px;
+  border: 0;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.342);
+}
+input[ type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  outline-color: transparent;
+  outline-style: none;
+  background-color: #2d89cc24;
+}
+textarea {
+  font-family:  'Roboto', sans-serif;
+}
+.form__item .btn {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  /* text-transform: uppercase; */
+  /* font-weight: 700; */
+  font-size: 110%;
+}
+.login__window {
+  height: 100%;
+  min-height: 800px;
+  padding : 200px 0;
+  background-image: url(https://api2.house-of-training.nl/vdab/wp-content/uploads/sites/2/2019/02/layoutscherm-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size:cover;
+}
+.error {
+  text-align: center;
+  background: var(--tertiairy-color );
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;;
+}
+.loggedin-content{
+  margin: var(--main-padding) 0;
+}
+.loggedin-content .btn {
+  width: 100%;
+  background: var(--tertiairy-color);
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: var(--main-padding);
+}
+.alert {
+  color: rgba(255, 0, 0, 0.712);
+  font-weight: 700;
+  font-size: 10px;
+}
+.error-message{
+  background: rgba(255 ,0,0,0.2);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+}
+.checkbox_label{
+  margin: 10px 40px;;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: rgba(0,131,169,0.2);
+}
+/* On mouse-over, add a grey background color */
+.checkbox_label:hover  .checkmark {
+  background-color: #eee;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox_label .checkbox:checked ~ .checkmark {
+  background-color: var(--secondary-color);;
+}
+
+.checkbox_label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkbox {
+
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute; 
+  display: block;
+}
+/* Show the checkmark when checked */
+.checkbox_label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox_label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.link-flat {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2px 5px;
+  background: rgba(255,255,255,.5);
+  color: var(--secondary-color);
+  border-radius: 3px;;
+}
